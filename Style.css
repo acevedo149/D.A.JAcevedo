@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Playfair Display', serif;
+    height: 100vh;
+}
+body{
+    min-height: 100vh;
+}
+.grid-container{
+    display: grid;
+    background-color:#c5c6c7;
+    grid-template-areas: 
+    "header"
+    "main" 
+    "footer";    
+}
+
+.header{
+    grid-area: header ;
+    background-color:#1f2833;
+    height: 100px;
+    
+}
+.main{
+    grid-area: main;
+    background-color:#c5c6c7;
+    margin: 0;
+    
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(6, 5, 5);
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+}
+nav ul li a{
+    color: rgb(233, 226, 218);
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px;
+    list-style: none;
+}
+
+.nav ul a:hover{
+    color: rgba(9, 21, 21, 0.822);
+    background:rgba(247, 245, 245, 0.815);
+    animation: 3s ms 1;
+}
+@keyframes ms{
+    0%{
+        opacity: 0;
+        transform: scale(1.6);
+    }
+}
+
+
+
+
+
+
+.Logo{
+    height: 6rem;
+    padding: 5px;
+}
+
+
+
+
+
+/*main*/
+
+.Imagen{
+    height: 300px;
+    background-image:url("imagenes/imagenprincipal.jpg");
+    background-size:cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.texto{
+    padding: 5px;
+    background-color: #c5c6c7;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/*SERVICIOS*/
+.Contenedor2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:55px ;
+}
+.Articulo{
+    margin: 30px;
+    border: 1px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;}
+
+/*NUESTRA COMPANIA*/
+.Imagen2{
+    text-align: center;
+    margin: 30px;
+    border: 1px;
+    padding: 10px;
+}
+/*CONTACTENOS*/
+.TablaContacto{
+    margin: 30px;
+}
+.Forma{
+    text-shadow: #222;
+    text-align: justify;
+    text-size-adjust:3;
+}
+/*CERTIFICACIONES*/
+.tabla{
+    display: block;
+    margin: 30px;
+    border: 1px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+}
+.Cuadrado4{
+    display: flex;
+    justify-content: center;
+}
+.Articulo-p{
+    font-size: 20px;
+}
+
+
+/*MULTIMEDIA*/
+
+.SectionMultimedia{
+    margin-left: 85px;
+}
+.Video{
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+}
+.Imagen3{
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+}
+.Imagen4{
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+}
+.Imagen5{
+    width: 250px;
+    height: 300px;
+    margin: 10px
+}
+.Imagen6{
+    width: 250px;
+    height: 300px;
+    margin: 10px
+}
+
+/*footer*/
+.footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 90px;
+        margin: 0;
+        background-color: #222;
+        padding: 1rem;
+        color: #fff;
+        font-size: 15px;
+    }
+    .copy{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    font-size: 15px;
+    }
+
+
+
+    @media screen and (min-width:150px) and (max-width:480px) {
+        .grid-container{
+            background-color:#c5c6c7;
+            }
+         ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                margin: 5px;
+                padding: 5px;
+                list-style: none;
+            }
+        nav ul li a{
+                color:rgb(233, 226, 218) ;
+                font-size: 10px;
+                text-transform: uppercase;
+                padding: 5px;
+        }
+        .texto{
+            padding: 5px;
+            background-color: #c5c6c7;
+            text-align: center;
+            font-size: 12px;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 90px;
+            margin: 0;
+            background-color: #222;
+            padding: 1rem;
+            color: #fff;
+            font-size: 12px;
+        }
+        .copy{
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        font-size: 12px;
+        }
+        .Contenedor2{
+            margin-bottom: 20px;
+            text-align: center;
+            font-size:30px ;
+        }
+        .Articulo{
+            margin: 30px;
+            border: 1px;
+            padding: 10px;
+            color: black;
+            font-size: 15px;
+        }
+        .Imagen2{
+            display: flex;
+            margin: 30px;
+            border: 1px;
+            padding: 10px;
+            width: 300px;
+            height: 300px;
+        }
+        .Forma2{
+            position:relative;
+            bottom: 200px;
+            font-size:15px;
+            margin: 10px;
+        }
+        .parrafo1{
+            font-size: 15px;
+            margin: 10px;
+        }
+        .Cuadrado4{
+            display: flex;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+        }
+
+    }
+        
+    @media screen and (min-width:480px) and (max-width:700px){
+        .texto{
+            padding: 5px;
+            background-color: #c5c6c7;
+            text-align: center;
+            font-size: 15px;
+        }
+        .Contenedor2{
+            margin-bottom: 20px;
+            text-align: center;
+            font-size:35px ;
+        }
+        .Articulo{
+            margin: 30px;
+            border: 1px;
+            padding: 10px;
+            color: black;
+            font-size: 18px;}
+    }
+
+
+    @media screen and (min-width:700px) and (max-width:1200px) {
+        .grid-container{
+            background-color:#c5c6c7;
+            }
+         ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                margin: 5px;
+                padding: 5px;
+                list-style: none;
+            }
+        nav ul li a{
+                color:rgb(233, 226, 218) ;
+                font-size: 20px;
+                text-transform: uppercase;
+                padding: 5px;
+        }
+        .texto{
+            padding: 5px;
+            background-color: #c5c6c7;
+            text-align: center;
+            font-size: 20px;
+        }
+        .Contenedor2{
+            margin-bottom: 20px;
+            text-align: center;
+            font-size:50px ;
+        }
+        .Articulo{
+            margin: 30px;
+            border: 1px;
+            padding: 10px;
+            color: black;
+            font-size: 20px;}
+    }
+
+    @media screen and (min-width:1200px) and (max-width:1600px) {
+                 nav ul li a{
+                color: rgb(233, 226, 218);
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 5px;
+                justify-content: space-around;
+        }
+    }
