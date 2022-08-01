@@ -79,6 +79,7 @@ nav ul li a{
 .Logo{
     height: 6rem;
     padding: 5px;
+    border-radius: 20px;
 }
 
 
@@ -132,6 +133,7 @@ nav ul li a{
     text-align: justify;
     text-size-adjust:3;
 }
+
 /*CERTIFICACIONES*/
 .tabla{
     display: block;
