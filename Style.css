@@ -3,71 +3,54 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+/*html{
     font-family: 'Playfair Display', serif;
     height: 100vh;
-}
-body{
+}+/
+/*body{
     min-height: 100vh;
-}
-.grid-container{
+}*/
+/*.grid-container{
     display: grid;
     background-color:#c5c6c7;
     grid-template-areas: 
     "header"
     "main" 
     "footer";    
-}
+}*/
 
-.header{
+/*.header{
     grid-area: header ;
     background-color:#1f2833;
     height: 100px;
     
-}
-.main{
+}*/
+/*.main{
     grid-area: main;
     background-color:#c5c6c7;
     margin: 0;
     
-}
-.footer{
+}*/
+
+/*.footer{
     grid-area: footer;
     background-color: rgb(6, 5, 5);
-}
+}*/
 
 
-.nav{
-    display: flex;
-    flex-direction: row;
-    
-}
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-    list-style: none;
-}
-nav ul li a{
-    color: rgb(233, 226, 218);
-    font-size: 15px;
-    text-transform: uppercase;
-    padding: 5px;
-    list-style: none;
-}
-
-.nav ul a:hover{
+a:hover{
     color: rgba(9, 21, 21, 0.822);
-    background:rgba(247, 245, 245, 0.815);
+    background:rgba(98, 96, 96, 0.815);
     animation: 3s ms 1;
+    border-radius: 12px;
 }
 @keyframes ms{
     0%{
-        opacity: 0;
-        transform: scale(1.6);
+        opacity: 1;
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 
@@ -87,6 +70,13 @@ nav ul li a{
 
 
 /*main*/
+.main-inicio{
+    height: 300px;
+    background-image:url("imagenes/imagenprincipal.jpg");
+    background-size:cover;
+    background-position: center;
+    opacity: 0.7;
+}
 
 .Imagen{
     height: 300px;
@@ -235,7 +225,7 @@ nav ul li a{
 }
 
 /*footer*/
-.footer{
+/*.footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: 90px;
@@ -250,7 +240,7 @@ nav ul li a{
     align-items: center;
     justify-content:flex-end;
     font-size: 15px;
-    }
+    }*/
 
 .logo-footer{
     display: flex;
@@ -261,7 +251,7 @@ nav ul li a{
 
 
 
-    @media screen and (min-width:150px) and (max-width:480px) {
+    /*@media screen and (min-width:150px) and (max-width:480px) {
         .grid-container{
             background-color:#c5c6c7;
             }
@@ -408,4 +398,4 @@ nav ul li a{
                 padding: 5px;
                 justify-content: space-around;
         }
-    }
+    }*/
