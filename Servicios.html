@@ -10,48 +10,54 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="shortcut icon" href="imagenes\Icono.png">
+    <!--bootdtrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <title>Servicios</title>
 </head>
-<body class="grid-container">
-    <header class="header">
-        <nav class="nav">
-                <img src="imagenes/Logo1.jpg" class="Logo">
-                <ul>
-                    <li><a href="Inicio.html">inicio</a></li>
-                    
-                    <li><a href="Nuestracompania.html" >Nuestra compañia</a></li>
-                    
-                    <li><a href="Multimedia.html">Multimedia</a></li>
-                    
-                    <li><a href="Certificaciones.html">Certificaciones</a></li>
-                    
-                    <li><a href="Contacto.html">Contacto</a></li>
-                </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <h2 class="Contenedor2">SERVICIOS</h2>
-        <article class="Articulo">
-            <p>D.A.J SERVICE SOLUTIONS opera para aeronaves de última generación. 
-             empleamos equipos de ingenieros y profesionales de mantenimiento de aeronaves dedicados
-             para ejecutar de manera experta el mantenimiento y las modificaciones de la base de aeronaves. 
-            A continuación puede encontrar más información sobre estas instalaciones y los servicios de mantenimiento 
-            de aeronaves que ofrecemos en cada una de ellas.</p>
-        </article>
-    </main>
-        <!--A--->
-
-    <footer class="footer">
-            <section>
-            <address>
-              Daniel Acevedo<br>
-              acevedo149@hotmail.com
-            </address>
-            <a href="Contacto.html">Contacto</a>
-            </section>
-            <div class="copy">
-            <p>Copyright 2022</p>
-            </div>
-    </footer>
+<body>
+<!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient">
+    <div class="container-fluid">
+      <img src="imagenes/Logo1.jpg" class="Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto fs-5 text-center">
+      <a class="nav-link active text-white" aria-current="page" href="Inicio.html">INICIO</a>
+      <a class="nav-link text-white" href="Nuestracompania.html">NUESTRA COMPAÑIA</a>
+      <a class="nav-link text-white" href="Multimedia.html">MULTIMEDIA</a>
+      <a class="nav-link text-white" href="Certificaciones.html">CERTIFICACIONES</a>
+      <a class="nav-link text-white" href="Contacto.html" tabindex="-1" aria-disabled="true">CONTACTOS</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+<!--MAIN-->
+<main class="main-servicios">
+  <div class="container-fluid">
+    <div class="col-sm-12 col-md-12 col-l-12 col-xl-12">
+      <h2 class="text-center pt-3">SERVICIOS</h2>
+          <div class="align-items-center text-dark  pt-3">D.A.J SERVICE SOLUTIONS opera para aeronaves de última generación. 
+        empleamos equipos de ingenieros y profesionales de mantenimiento de aeronaves dedicados
+        para ejecutar de manera experta el mantenimiento y las modificaciones de la base de aeronaves. 
+        A continuación puede encontrar más información sobre estas instalaciones y los servicios de mantenimiento 
+        de aeronaves que ofrecemos en cada una de ellas.</div>
+    </div>
+  </div>
+</main>
+<!--FOOTER-->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0 border-top bg-dark">
+    <div class="col-md-4 d-flex align-items-center" bis_skin_checked="1">
+      <img src="imagenes/Logo1.jpg" class="img-fluid ms-4 logo-footer">
+        <span class="mb-3 mb-md-0 text-muted ms-1">© 2022 Company, Inc</span>
+    </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li><a class="nav-link text-muted" href="Contacto.html" tabindex="-1" aria-disabled="true">CONTACTOS</a></li>
+      </ul>
+  </footer>
+<!--bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 </html>
