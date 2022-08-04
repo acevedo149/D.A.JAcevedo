@@ -25,31 +25,47 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto fs-5 text-center">
         <a class="nav-link active text-white" aria-current="page" href="Inicio.html">INICIO</a>
+        <a class="nav-link text-white" href="Servicios.html">SERVICIOS</a>
         <a class="nav-link text-white" href="Nuestracompania.html">NUESTRA COMPAÑIA</a>
         <a class="nav-link text-white" href="Multimedia.html">MULTIMEDIA</a>
-        <a class="nav-link text-white" href="Certificaciones.html">CERTIFICACIONES</a>
-        <a class="nav-link text-white" href="Servicios.html" tabindex="-1" aria-disabled="true">SERVICIOS</a>
+        <a class="nav-link text-white" href="Contacto.html" tabindex="-1" aria-disabled="true">CONTACTOS</a>
       </div>
     </div>
     </div>
   </nav>        
 <!--MAIN-->
-  <fieldset class="TablaContacto">
-    <legend>Contactenos</legend><br>
-      <tr>
-        <form action="formulario" method="post" class="Forma">
-          <label for="Nombre">Nombre</label><br>
-            <input type="text" name="Nombre" placeholder="Nombre"><br><br>
-            <label for="Apellido">Apellido</label><br>
-            <input type="text" name="Apellido" placeholder="Apellido"><br><br>
-            <label for="Email">Email</label><br>
-            <input type="email" name="Email" placeholder="email@hotmail.com">
-            <label for="Telefono">Telefono</label>
-            <input type="text" name="Telefono">
-            </select><br><br>
-            <input type="submit"value="Enviar">
-        </form>
-  </fieldset>
+<main class="bg">
+<div class="container text-light">
+  <div class="row">
+    <h2 class="text-center">CONTACTENOS</h2>
+<form class="">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Nombre">Nombre apellidos</label>
+      <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="telefono">telefono</label>
+      <input type="text" class="form-control" id="telefono">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
+  </div>
+</div>
+</main>
 <!--FOOTER-->
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0 border-top bg-dark">
     <div class="col-md-4 d-flex align-items-center" bis_skin_checked="1">
