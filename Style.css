@@ -31,6 +31,7 @@ a:hover{
     background-image:url("imagenes/imagenprincipal.jpg");
     background-size:cover;
     background-position: center;
+    
 }
 /*SERVICIOS*/
 .main-servicios{
@@ -39,13 +40,22 @@ a:hover{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    
+}
+.color{
+    color: rgba(8, 8, 8, 0.867)
 }
 /*NUESTRA COMPANIA*/
-.Imagen2{
-    text-align: center;
-    margin: 30px;
-    border: 1px;
-    padding: 10px;
+.imagen2{
+    background-image: url("imagenes/imagen2.jpg") ;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 300px;
+}
+.bg{
+    background: rgb(10,9,11);
+    background: linear-gradient(90deg, rgba(10,9,11,1) 6%, rgba(102,97,97,0.9140698515734419) 100%, rgba(0,212,255,1) 100%);
 }
 /*CONTACTENOS*/
 .TablaContacto{
@@ -74,13 +84,10 @@ a:hover{
     font-size: 20px;
 }
 /*MULTIMEDIA*/
-.SectionMultimedia{
-    margin-left: 85px;
-}
 .Video{
-    width: 250px;
+    width: 300px;
     height: 300px;
-    margin: 10px;
+    
 }
 .Video:hover{
     animation-name: multimedia;
@@ -93,9 +100,8 @@ a:hover{
     }
 }
 .Imagen3{
-    width: 250px;
+    width: 300px;
     height: 300px;
-    margin: 10px;
 }
 .Imagen3:hover{
     animation-name: multimedia;
@@ -108,9 +114,8 @@ a:hover{
     }
 }
 .Imagen4{
-    width: 250px;
+    width: 300px;
     height: 300px;
-    margin: 10px;
 }
 .Imagen4:hover{
     animation-name: multimedia;
@@ -123,9 +128,8 @@ a:hover{
     }
 }
 .Imagen5{
-    width: 250px;
+    width: 300px;
     height: 300px;
-    margin: 10px
 }
 .Imagen5:hover{
     animation-name: multimedia;
@@ -138,11 +142,24 @@ a:hover{
     }
 }
 .Imagen6{
-    width: 250px;
+    width: 300px;
     height: 300px;
-    margin: 10px
 }
 .Imagen6:hover{
+    animation-name: multimedia;
+    animation-duration: 4s;
+    animation-direction: alternate;
+}
+@keyframes multimedia {
+    0%{
+        transform: scale(1.5);
+    }
+}
+.Imagen8{
+    width: 300px;
+    height: 300px;
+}
+.Imagen8:hover{
     animation-name: multimedia;
     animation-duration: 4s;
     animation-direction: alternate;
