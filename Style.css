@@ -58,24 +58,16 @@ a:hover{
     background: linear-gradient(90deg, rgba(10,9,11,1) 6%, rgba(102,97,97,0.9140698515734419) 100%, rgba(0,212,255,1) 100%);
 }
 /*CONTACTENOS*/
-.TablaContacto{
-    margin: 30px;
+.form div{
+    margin: 10px 0 10px 0;
 }
-.Forma{
-    text-shadow: #222;
-    text-align: justify;
-    text-size-adjust:3;
+.invalid:invalid{
+    background-color: #f13f33;
+}
+.submit{
+    margin-bottom: 10px;
 }
 
-/*CERTIFICACIONES*/
-.tabla{
-    display: block;
-    margin: 30px;
-    border: 1px;
-    padding: 10px;
-    color: black;
-    font-size: 20px;
-}
 .Cuadrado4{
     display: flex;
     justify-content: center;
