@@ -19,6 +19,9 @@ a:hover{
         transform: scale(1);
     }
 }
+span{
+    background-color: rgb(129, 127, 127);
+}
 /*LOGO*/
 .Logo{
     height: 6rem;
@@ -51,7 +54,6 @@ animation-name: backInDown;
 animation-duration:3s;
 animation-iteration-count: 3;
 }
-
 
  
 /*INICIO*/
