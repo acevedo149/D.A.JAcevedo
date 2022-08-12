@@ -1,202 +1,177 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 /*MENUHOVER*/
-a:hover{
-    color: rgba(9, 21, 21, 0.822);
-    background:rgba(98, 96, 96, 0.815);
-    animation: 3s ms 1;
-    border-radius: 12px;
-}
-@keyframes ms{
-    0%{
-        opacity: 1;
-        transform: scale(1.3);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-span{
-    background-color: rgb(129, 127, 127);
-}
+a:hover {
+  color: rgba(9, 21, 21, 0.822);
+  background: rgba(98, 96, 96, 0.815);
+  animation: 3s ms 1;
+  border-radius: 12px; }
+
+@keyframes ms {
+  0% {
+    opacity: 1;
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
 /*LOGO*/
-.Logo{
-    height: 6rem;
-    padding: 5px;
-    border-radius: 20px;
-   }
+.Logo {
+  height: 6rem;
+  padding: 5px;
+  border-radius: 20px; }
 
 @keyframes backInDown {
-0% {
--webkit-transform: translateY(-1200px) scale(0.7);
-transform: translateY(-1200px) scale(0.7);
-opacity: 0.7;
-}
+  0% {
+    -webkit-transform: translateY(-1200px) scale(0.7);
+    transform: translateY(-1200px) scale(0.7);
+    opacity: 0.7; }
+  80% {
+    -webkit-transform: translateY(0px) scale(0.7);
+    transform: translateY(0px) scale(0.7);
+    opacity: 0.7; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
 
-80% {
--webkit-transform: translateY(0px) scale(0.7);
-transform: translateY(0px) scale(0.7);
-opacity: 0.7;
-}
-
-100% {
--webkit-transform: scale(1);
-transform: scale(1);
-opacity: 1;
-}
-}
 .Logo {
--webkit-animation-name: backInDown;
-animation-name: backInDown;
-animation-duration:3s;
-animation-iteration-count: 3;
-}
+  -webkit-animation-name: backInDown;
+  animation-name: backInDown;
+  animation-duration: 3s;
+  animation-iteration-count: 3; }
 
- 
 /*INICIO*/
-.main-inicio{
-    height: 400px;
-    background-image:url("imagenes/imagenprincipal.jpg");
-    background-size:cover;
-    background-position: center;
-    
-}
-/*SERVICIOS*/
-.main-servicios{
-    background-image:url("imagenes/imagenservicios.jpg") ;
-    height: 400px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-.color{
-    color: rgba(8, 8, 8, 0.867)
-}
-/*NUESTRA COMPANIA*/
-.imagen2{
-    background-image: url("imagenes/imagen2.jpg") ;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    width: 300px;
-}
-.bg{
-    background: rgb(10,9,11);
-    background: linear-gradient(90deg, rgba(10,9,11,1) 6%, rgba(102,97,97,0.9140698515734419) 100%, rgba(0,212,255,1) 100%);
-}
-/*CONTACTENOS*/
-.form div{
-    margin: 10px 0 10px 0;
-}
-.invalid:invalid{
-    background-color: #f13f33;
-}
-.submit{
-    margin-bottom: 10px;
-}
+.main-inicio {
+  height: 400px;
+  background-image: url("imagenes/imagenprincipal.jpg");
+  background-size: cover;
+  background-position: center; }
 
-.Cuadrado4{
-    display: flex;
-    justify-content: center;
-}
-.Articulo-p{
-    font-size: 20px;
-}
+/*SERVICIOS*/
+.main-servicios {
+  background-image: url("imagenes/imagenservicios.jpg");
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.color {
+  color: rgba(8, 8, 8, 0.867); }
+
+/*NUESTRA COMPANIA*/
+.imagen2 {
+  background-image: url("imagenes/imagen2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 300px; }
+
+.bg {
+  background: #0a090b;
+  background: linear-gradient(90deg, #0a090b 6%, rgba(102, 97, 97, 0.91407) 100%, #00d4ff 100%); }
+
+/*CONTACTENOS*/
+.form div {
+  margin: 10px 0 10px 0; }
+
+.invalid:invalid {
+  background-color: #f13f33; }
+
+.submit {
+  margin-bottom: 10px; }
+
+.Cuadrado4 {
+  display: flex;
+  justify-content: center; }
+
+.Articulo-p {
+  font-size: 20px; }
+
 /*MULTIMEDIA*/
-.Video{
-    width: 300px;
-    height: 300px;
-    
-}
-.Video:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
+.Video {
+  width: 300px;
+  height: 300px; }
+
+.Video:hover {
+  animation-name: multimedia;
+  animation-duration: 4s;
+  animation-direction: alternate; }
+
 @keyframes multimedia {
-    0%{
-        transform: scale(1.5);
-    }
-}
-.Imagen3{
-    width: 300px;
-    height: 300px;
-}
-.Imagen3:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
+  0% {
+    transform: scale(1.5); } }
+
+.Imagen3 {
+  width: 300px;
+  height: 300px; }
+
+.Imagen3:hover {
+  animation-name: multimedia;
+  animation-duration: 4s;
+  animation-direction: alternate; }
+
 @keyframes multimedia {
-    0%{
-        transform: scale(1.5);
-    }
-}
-.Imagen4{
-    width: 300px;
-    height: 300px;
-}
-.Imagen4:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
+  0% {
+    transform: scale(1.5); } }
+
+.Imagen4 {
+  width: 300px;
+  height: 300px; }
+
+.Imagen4:hover {
+  animation-name: multimedia;
+  animation-duration: 4s;
+  animation-direction: alternate; }
+
 @keyframes multimedia {
-    0%{
-        transform: scale(1.5);
-    }
-}
-.Imagen5{
-    width: 300px;
-    height: 300px;
-}
-.Imagen5:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
+  0% {
+    transform: scale(1.5); } }
+
+.Imagen5 {
+  width: 300px;
+  height: 300px; }
+
+.Imagen5:hover {
+  animation-name: multimedia;
+  animation-duration: 4s;
+  animation-direction: alternate; }
+
 @keyframes multimedia {
-    0%{
-        transform: scale(1.5);
-    }
-}
-.Imagen6{
-    width: 300px;
-    height: 300px;
-}
-.Imagen6:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
+  0% {
+    transform: scale(1.5); } }
+
+.Imagen6 {
+  width: 300px;
+  height: 300px; }
+
+.Imagen6:hover {
+  animation-name: multimedia;
+  animation-duration: 4s;
+  animation-direction: alternate; }
+
 @keyframes multimedia {
-    0%{
-        transform: scale(1.5);
-    }
-}
-.Imagen8{
-    width: 300px;
-    height: 300px;
-}
-.Imagen8:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
+  0% {
+    transform: scale(1.5); } }
+
+.Imagen8 {
+  width: 300px;
+  height: 300px; }
+
+.Imagen8:hover {
+  animation-name: multimedia;
+  animation-duration: 4s;
+  animation-direction: alternate; }
+
 @keyframes multimedia {
-    0%{
-        transform: scale(1.5);
-    }
-}
+  0% {
+    transform: scale(1.5); } }
 
 /*FOOTER*/
-.logo-footer{
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-    height: 100px;
-}
+.logo-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 100px; }

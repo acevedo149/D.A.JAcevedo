@@ -241,7 +241,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css":"node-sass --included-path scss scss/style.scss desafio5/style.css",
+    "build-css":"node-sass --included-path scss scss/style.scss style.css",
     "watch-css":"nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
