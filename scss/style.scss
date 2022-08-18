@@ -1,3 +1,35 @@
+//variables//
+$color1:rgba(9, 21, 21, 0.822);
+$font-size: 20px;
+
+
+@mixin logo {
+    height: 6rem;
+    padding: 5px;
+    border-radius: 20px;
+    }
+
+@mixin multimedia {
+    width: 300px;
+    height: 300px;
+}
+@mixin hover {
+    animation-name: multimedia;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    }
+    @keyframes multimedia {
+    0%{
+        transform: scale(1.5);
+    }
+    }
+
+@mixin footer {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +37,7 @@
 }
 /*MENUHOVER*/
 a:hover{
-    color: rgba(9, 21, 21, 0.822);
+    color:$color1;
     background:rgba(98, 96, 96, 0.815);
     animation: 3s ms 1;
     border-radius: 12px;
@@ -21,9 +53,7 @@ a:hover{
 }
 /*LOGO*/
 .Logo{
-    height: 6rem;
-    padding: 5px;
-    border-radius: 20px;
+    @include logo();
    }
 
 @keyframes backInDown {
@@ -102,99 +132,48 @@ animation-iteration-count: 3;
     justify-content: center;
 }
 .Articulo-p{
-    font-size: 20px;
+    font-size: $font-size;
 }
 /*MULTIMEDIA*/
 .Video{
-    width: 300px;
-    height: 300px;
-    
-}
-.Video:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
-@keyframes multimedia {
-    0%{
-        transform: scale(1.5);
+    @include multimedia();
+    &:hover{
+    @include hover();
     }
 }
 .Imagen3{
-    width: 300px;
-    height: 300px;
-}
-.Imagen3:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
-@keyframes multimedia {
-    0%{
-        transform: scale(1.5);
+    @include multimedia();
+    &:hover{
+    @include hover();
     }
 }
 .Imagen4{
-    width: 300px;
-    height: 300px;
-}
-.Imagen4:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
-@keyframes multimedia {
-    0%{
-        transform: scale(1.5);
+    @include multimedia();
+    &:hover{
+    @include hover();
     }
 }
 .Imagen5{
-    width: 300px;
-    height: 300px;
-}
-.Imagen5:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
-@keyframes multimedia {
-    0%{
-        transform: scale(1.5);
+    @include multimedia();
+    &:hover{
+    @include hover();
     }
 }
 .Imagen6{
-    width: 300px;
-    height: 300px;
-}
-.Imagen6:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
-@keyframes multimedia {
-    0%{
-        transform: scale(1.5);
+    @include multimedia();
+    &:hover{
+    @include hover();
     }
 }
 .Imagen8{
-    width: 300px;
-    height: 300px;
-}
-.Imagen8:hover{
-    animation-name: multimedia;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
-@keyframes multimedia {
-    0%{
-        transform: scale(1.5);
+    @include multimedia();
+    &:hover{
+    @include hover();
     }
 }
+    
 
 /*FOOTER*/
 .logo-footer{
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-    height: 100px;
+    @include footer();
 }
