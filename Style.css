@@ -7,6 +7,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+  p{color: rgb(2, 2, 35);
+  font-size: 25px;}
+
 /*MENUHOVER*/
 a:hover {
   color: rgba(9, 21, 21, 0.822);
@@ -56,11 +59,11 @@ a:hover {
 
 /*SERVICIOS*/
 .main-servicios {
-  background-image: url("imagenes/imagenservicios.jpg");
   height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center; 
+  background-image: url("imagenes/imagenservicios.jpg");}
 
 .color {
   color: rgba(8, 8, 8, 0.867); }
