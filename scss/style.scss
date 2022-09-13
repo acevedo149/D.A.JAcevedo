@@ -135,37 +135,37 @@ animation-iteration-count: 3;
     font-size: $font-size;
 }
 /*MULTIMEDIA*/
-.Video{
+.video{
     @include multimedia();
     &:hover{
     @include hover();
     }
 }
-.Imagen3{
+.imagen3{
     @include multimedia();
     &:hover{
     @include hover();
     }
 }
-.Imagen4{
+.imagen4{
     @include multimedia();
     &:hover{
     @include hover();
     }
 }
-.Imagen5{
+.imagen5{
     @include multimedia();
     &:hover{
     @include hover();
     }
 }
-.Imagen6{
+.imagen6{
     @include multimedia();
     &:hover{
     @include hover();
     }
 }
-.Imagen8{
+.imagen8{
     @include multimedia();
     &:hover{
     @include hover();
